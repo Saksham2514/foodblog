@@ -12,9 +12,10 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-remark-relative-images`,
     `gatsby-plugin-image`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve:    `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
