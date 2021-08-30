@@ -1,13 +1,13 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "/images/uploads"
+media_folder: "content/blog/{{slug}}/"
 collections:
   - name: "Blog"
     label: "Blog"
     folder: "content/blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}/{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
