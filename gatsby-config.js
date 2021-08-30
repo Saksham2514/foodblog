@@ -28,6 +28,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog-images`,
+        path: `${__dirname}/static/images/uploads`,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
